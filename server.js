@@ -1,16 +1,18 @@
-'use strict';
+const User = require('./message');
+const http = require('http');
 
-const express = require('express');
+const hostname = '127.0.0.1';
+const port = 3000;
 
-// Constants
-cost PORT = 8080;
-const HOST = '0.0.0.0';
-
-// App
-const app = express();
-app.get('/', (req, res) => {
-    res.send('Hello sadsads\n');
+const server = http.createServer((req, res) => {
+    res.statusCode = 200;
+    res.setHeader('Content-Type', 'text/plain');
+    res.end('Hello World\n');
 });
 
-app.listen(PORT, HOST);
-console.log(`Running on http://${HOST}:${PORT}`);
+console.log(User);
+
+
+server.listen(port, hostname, () => {
+    console.log(`Server runnsing at http://${hostname}:${port}/`);
+});
