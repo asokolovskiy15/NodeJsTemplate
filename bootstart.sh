@@ -1,7 +1,8 @@
 #!/bin/bash
-FILES=*.js
-for f in $FILES
+find . -type f -name '*.js'  
+export JS_FILES="$(find . -type f -name '*.js'  )"
+for file in JS_FILES
 do
-    echo "$f"
-     node --check $f
+    node --check $file
 done
+	
