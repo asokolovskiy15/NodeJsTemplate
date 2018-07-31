@@ -1,1 +1,1 @@
-module.exports.Keks = {keks: 'Keks = pacassn'}
+module.exports.Letters = {letters: 'Letters = word'
