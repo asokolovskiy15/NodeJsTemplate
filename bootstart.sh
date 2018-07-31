@@ -1,5 +1,5 @@
 #!/bin/bash
-FILES=./test/*.js
+FILES=*.js
 for f in $FILES
 do
     echo "$f"
