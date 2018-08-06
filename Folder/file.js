@@ -1,1 +1,1 @@
-module.exports.Letters = {letters: 'Letters = word'}
+module.exports.Letters  {letters: 'Letters = word'}
